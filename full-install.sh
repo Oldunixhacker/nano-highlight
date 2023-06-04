@@ -8,7 +8,7 @@ else
     echo "Your nano config has been moved to $HOME/.nanoconf."
     echo "Edit that file to add configs besides the loader."
   else
-    echo -e "# DO NOT DELETE THIS FILE!\# nIt is provided by nano-highlight to offer\n# working config other than the highlighting loader.\n" > ~/.nanoconf
+    echo -e "# DO NOT DELETE THIS FILE!\n# It is provided by nano-highlight to offer\n# working config other than the highlighting loader.\n" > ~/.nanoconf
   fi
   echo -n "Setting up highlighter folder..."
   mkdir $HOME/nano-highlight
