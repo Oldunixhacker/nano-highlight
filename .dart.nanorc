@@ -1,6 +1,13 @@
+## Syntax highlighter for Dart code.
 syntax "dart" "\\*.dart$"
+
+# Keywords
 color brightyellow "\<(async|await|break|case|catch|class|const|continue|default|do|else|enum|extends|false|final|finally|for|if|in|is|null|rethrow|return|super|switch|this|throw|true|try|var|void|while|import)\>"
+# Comments
 color cyan "//.*$" "(^|[^\\\\])\".*[^\\\\]\""
 color brightmagenta "\"[^\"]*\""
 color brightmagenta "'[^\']*'"
+# Override
 color brightcyan "@override"
+# Trailing whitespace
+color ,green "[[:space:]]+$"
