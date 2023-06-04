@@ -12,7 +12,8 @@ echo "Downloading highlighters [latest version]..."
 echo -n "- Dart"
 wget https://raw.githubusercontent.com/TylerMS887/nano-highlight/main/.dart.nanorc -q
 echo " ✓"
-if [ ! -z $(grep "include \"$HOME/nano-highlight/.*.nanorc\"" "$HOME/.nanorc") ] then
+if [ ! -z $(grep "include \"$HOME/nano-highlight/.*.nanorc\"" "$HOME/.nanorc") ]
+then
   echo "nano-highlight loader is in the nanorc file, leaving nanorc alone..."
 else
   echo "Enabling highlighters..."
