@@ -26,7 +26,7 @@ This highlighter adds Dart support to nano's highlighter.
 
 If you done a basic install, paste these commands into your shell to enable Dart highlighting:
 
-```
+```shell
 export PREVIOUS_DIR="$(pwd)"
 cd ~/nano-highlight
 wget -q https://raw.githubusercontent.com/TylerMS887/nano-highlight/main/.dart.nanorc
@@ -35,8 +35,16 @@ cd $PREVIOUS_DIR
 
 ## Add new highlighters
 
-Create a new issue.
+### To the nano-highlight repo
+
+[Create a new issue](https://tinyurl.com/nano-highlight-new-lingua).
 
 Highlighters must not:
-* Be for estoric programming languages (who needs those?)
-* Contain syntax errors that affect the current Debian version of nano
+* Be for esoteric programming languages (who needs those?)
+* Contain syntax errors that affect the current Debian stable version of nano
+
+### To your setup
+
+Run the following command: `nano ~/nano-highlight/.lingua-name`
+
+> **Note** for confused users: Replace *lingua-name* with the name of the language.
