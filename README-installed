@@ -7,3 +7,5 @@ in lowercase. This includes .dart.nanorc, .csharp.nanorc and more.
 
 You can get some highlighters from the following URL:
 https://github.com/TylerMS887/nano-highlight/tree/main#readme
+Or run this command to get them all:
+/bin/bash -c "$(curl -fsSL https://raw.githubusercontent.com/TylerMS887/nano-highlight/main/full-install.sh)"
