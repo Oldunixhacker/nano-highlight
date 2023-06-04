@@ -10,7 +10,7 @@ To install nano-highlight use these commands:
 cd ~
 mkdir nano-highlight
 cd nano-highlight
-wget https://raw.githubusercontent.com/TylerMS887/nano-highlight/main/README-installed -O README
+wget https://raw.githubusercontent.com/TylerMS887/nano-highlight/main/README-installed -O README -q
 cat README
 rm README
 ```
