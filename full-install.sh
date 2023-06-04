@@ -8,7 +8,7 @@ else
   wget https://raw.githubusercontent.com/TylerMS887/nano-highlight/main/README-installed-full -O README -q
   echo " Done!"
   echo "Installing highlighters..."
-  echo 'include "$HOME/nano-highlight/.*.nanorc"' >> $HOME/.nanorc
+  echo 'include "~/nano-highlight/.*.nanorc"' >> $HOME/.nanorc
 fi
 echo "Downloading highlighters..."
 echo -n "- Dart"
