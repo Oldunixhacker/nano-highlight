@@ -13,7 +13,7 @@ Install the highlighter with these commands:
 ```shell
 cd ~
 wget https://raw.githubusercontent.com/TylerMS887/nano-highlight/main/.dart.nanorc
-echo -e '\ninclude "~/.dart.nanorc"' >> ~/.nanorc
+echo 'include "~/.dart.nanorc"' >> ~/.nanorc
 ```
 
 ## Add new highlighters
