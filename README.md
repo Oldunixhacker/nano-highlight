@@ -9,7 +9,7 @@ To install nano-highlight use these commands:
 ```shell
 cd ~
 mkdir nano-highlight
-cd nano-lighlight
+cd nano-highlight
 wget https://raw.githubusercontent.com/TylerMS887/nano-highlight/main/README-installed -O README
 cat README
 ```
