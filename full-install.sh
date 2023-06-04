@@ -7,6 +7,10 @@ else
   cd $HOME/nano-highlight
   wget https://raw.githubusercontent.com/TylerMS887/nano-highlight/main/README-installed-full -O README -q
   echo " Done!"
+fi
+if [ -f "$HOME/.nanorc" ] then
+  echo "Skipping nanorc setup"
+else
   echo "Installing highlighters..."
   echo 'include "~/nano-highlight/.*.nanorc"' >> $HOME/.nanorc
 fi
