@@ -1,4 +1,4 @@
-if [ -d "$HOME/nano-highlight" ]; then
+if [ -f "$HOME/nano-highlight/.Nano-highlight-exists" ]; then
   echo "nano-highlight folder exists, skipping folder setup..."
 else
   if [ -f "$HOME/.nanorc" ]
@@ -28,3 +28,11 @@ then
   cat README
   rm README
 fi
+echo -e "Temporary bug patch: Attempting to remove all highlighter nanorc files\nat $HOME (excluding its subfolders)"
+echo -e "If you know how to fix the nanorc files randomly creating\ntheirself in your home folder, please open a pull request"
+echo
+echo '$ rm ~/.*.nanorc* -v'
+rm ~/.*.nanorc* -v
+echo "Installation finished!"
+# alert
+echo -en "\a"
