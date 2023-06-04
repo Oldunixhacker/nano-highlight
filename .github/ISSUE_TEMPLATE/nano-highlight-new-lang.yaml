@@ -1,11 +1,12 @@
 name: New Language
 description: Request that a new language be added
+labels: ["new language"]
 body:
   - type: markdown
     attributes:
       value: |
         **Please note that esoteric languages are not acceptable and will be declined.**
-        However, markup languages are acceptable.
+        However, markup, configuration, and command line languages are acceptable.
         
         New languages will be introduced into the `dev` Git branch.
   - type: input
