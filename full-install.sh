@@ -1,7 +1,7 @@
 echo -n "Setting up highlighter folder..."
 mkdir ~/nano-highlight
 cd ~/nano-highlight
-wget https://raw.githubusercontent.com/TylerMS887/nano-highlight/main/README-installed -O README -q
+wget https://raw.githubusercontent.com/TylerMS887/nano-highlight/main/README-installed-full -O README -q
 echo " Done!"
 echo "Downloading highlighters..."
 echo -n "- Dart"
