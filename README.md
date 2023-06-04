@@ -12,7 +12,7 @@ To install or update nano-highlight use this command:
 
 Or to do a basic install (e.g. highlighters must be installed manually):
 
-```
+```shell
 /bin/bash -c "$(curl -fsSL https://raw.githubusercontent.com/TylerMS887/nano-highlight/main/install.sh)"
 ```
 
