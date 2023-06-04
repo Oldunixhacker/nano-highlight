@@ -1,0 +1,6 @@
+This folder contains additional syntax highlighters for Nano.
+This includes Dart, C# and more.
+
+Install a new syntax highlighter by running one of the scripts
+from the online README:
+https://github.com/TylerMS887/nano-highlight/blob/main/README.md
