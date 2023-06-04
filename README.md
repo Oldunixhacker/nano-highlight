@@ -45,6 +45,6 @@ Highlighters must not:
 
 ### To your setup
 
-Run the following command: `nano ~/nano-highlight/.lingua-name`
+Run the following command: `nano ~/nano-highlight/.lingua-name.nanorc`
 
 > **Note** for confused users: Replace *lingua-name* with the name of the language.
