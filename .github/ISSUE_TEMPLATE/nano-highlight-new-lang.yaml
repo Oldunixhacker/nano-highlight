@@ -4,9 +4,18 @@ labels: ["new language"]
 assignees: ["TylerMS887"]
 
 body:
+  - type: checkboxes
+    id: requirements
+    attributes:
+      label: Requirements
+      description: "Please thoroughly read and tick these requirements before you submit this request."
+      options:
+        - label: This is not an esoteric language. Estoric languages are not accepted into nano-highlight for obvious reasons.
+          required: true
   - type: markdown
     attributes:
       value: |
+        ##### Why do these requirements exist?
         **Please note that esoteric languages are not acceptable and will be declined.**
         However, markup, configuration, and command line languages are acceptable.
         New languages will be introduced into the `dev` Git branch.
@@ -25,11 +34,3 @@ body:
       placeholder: 'print "Hello World!"'
     validations:
       required: true
-  - type: checkboxes
-    id: requirements
-    attributes:
-      label: Requirements
-      description: "Please thoroughly read and tick these requirements before you submit this request."
-      options:
-        - label: This is not an esoteric language. Estoric languages are not accepted into nano-highlight for obvious reasons.
-          required: true
