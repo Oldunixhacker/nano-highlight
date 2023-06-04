@@ -1,0 +1,9 @@
+Nano-highlight folder has been installed!
+
+The nano-highlight folder should contain files with a name like this:
+   .lowercaselangname.nanorc
+with "lowercaselangname" replaced with the name of the syntax language
+in lowercase. This includes .dart.nanorc, .csharp.nanorc and more.
+
+You can get some highlighters from the following URL:
+https://github.com/TylerMS887/nano-highlight/tree/main#readme
