@@ -1,0 +1,42 @@
+name: New Language
+description: Request that a new language be added
+body:
+  - type: markdown
+    attributes:
+      value: |
+        **Please note that esoteric languages are not acceptable and will be declined.**
+        However, markup languages are acceptable.
+        
+        New languages will be introduced into the `dev` Git branch.
+  - type: input
+    id: name
+    attributes:
+      label: Language name
+      placeholder: reStructuredText
+    validations:
+      required: true
+  - type: textarea
+    id: example
+    attributes:
+      label: Example code
+      render: text
+      placeholder: 'print "Hello World!"'
+    validations:
+      required: true
+  - type: checkboxes
+    id: requirements
+    attributes:
+      label: Requirements
+      options:
+        - label: This is not an esoteric language. Estoric languages are not accepted into nano-highlight for obvious reasons.
+          required: true
+  - type: dropdown
+    id: lingua-type
+    attributes:
+      label: What kind of language is this?
+      multiple: false
+      options:
+        - Programming
+        - Markup
+        - Command-line
+        - Configuration file
