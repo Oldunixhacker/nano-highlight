@@ -30,7 +30,6 @@ If you done a basic install, paste these commands into your shell to enable Dart
 export PREVIOUS_DIR="$(pwd)"
 cd ~/nano-highlight
 wget https://raw.githubusercontent.com/TylerMS887/nano-highlight/main/.dart.nanorc
-echo 'include "~/nano-highlight/.dart.nanorc"' >> ~/.nanorc
 cd $PREVIOUS_DIR
 ```
 
