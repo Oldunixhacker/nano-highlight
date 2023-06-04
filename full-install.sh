@@ -9,18 +9,23 @@ else
   echo " Done!"
 fi
 echo "Downloading highlighters [latest version]..."
-echo -n "- Dart"
+echo -e -n "\r- Dart"
 wget https://raw.githubusercontent.com/TylerMS887/nano-highlight/main/.dart.nanorc -q
-echo " ✓"
-if [ ! -z $(grep "include \"$HOME/nano-highlight/.*.nanorc\"" "$HOME/.nanorc") ]
+echo -e "\r✓ Dart"
+if [ -f "$HOME/.nanorc" ] && [ ! -s "$HOME/.nanorc" ]
 then
-  echo "nano-highlight loader is in the nanorc file, leaving nanorc alone..."
-else
-  echo "Enabling highlighters..."
-  echo "include \"$HOME/nano-highlight/.*.nanorc\"" >> $HOME/.nanorc
+  mv ~/.nanorc ~/.nanoconf
+  echo "Your config has been moved to $HOME/.nanoconf."
+  echo "Edit that file to add configs besides the loader."
+fi
+echo "Enabling highlighters..."
+echo "include \"$HOME/nano-highlight/.*.nanorc\"" > $HOME/.nanorc
+if [ -f "$HOME/nano-highlight/README" ]
+then
+  echo "include \"$HOME/.nanoconf\"" >> $HOME/.nanorc
 fi
 if [ -f "$HOME/nano-highlight/README" ]
 then
-cat README
-rm README
+  cat README
+  rm README
 fi
