@@ -1,12 +1,12 @@
-if [ -d "~/nano-highlight" ]
-then
-echo "nano-highlight folder exists, skipping folder setup..."
+if [ -d "~/nano-highlight" ]; then
+  echo "nano-highlight folder exists, skipping folder setup..."
+  cd ~/nano-highlight
 else
-echo -n "Setting up highlighter folder..."
-mkdir ~/nano-highlight
-cd ~/nano-highlight
-wget https://raw.githubusercontent.com/TylerMS887/nano-highlight/main/README-installed-full -O README -q
-echo " Done!"
+  echo -n "Setting up highlighter folder..."
+  mkdir ~/nano-highlight
+  cd ~/nano-highlight
+  wget https://raw.githubusercontent.com/TylerMS887/nano-highlight/main/README-installed-full -O README -q
+  echo " Done!"
 fi
 echo "Downloading highlighters..."
 echo -n "- Dart"
