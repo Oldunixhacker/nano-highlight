@@ -23,13 +23,6 @@ body:
       placeholder: 'print "Hello World!"'
     validations:
       required: true
-  - type: checkboxes
-    id: requirements
-    attributes:
-      label: Requirements
-      options:
-        - label: This is not an esoteric language. Estoric languages are not accepted into nano-highlight for obvious reasons.
-          required: true
   - type: dropdown
     id: lingua-type
     attributes:
@@ -40,5 +33,11 @@ body:
         - Markup
         - Command-line
         - Configuration file
-      validations:
-        required: true
+  - type: checkboxes
+    id: requirements
+    attributes:
+      label: Requirements
+      description: "Please thoroughly read and tick these requirements before you submit this request."
+      options:
+        - label: This is not an esoteric language. Estoric languages are not accepted into nano-highlight for obvious reasons.
+          required: true
