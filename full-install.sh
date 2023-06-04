@@ -12,10 +12,10 @@ echo "Downloading highlighters [latest version]..."
 echo -e -n "\r- Dart"
 wget https://raw.githubusercontent.com/TylerMS887/nano-highlight/main/.dart.nanorc -q
 echo -e "\r✓ Dart"
-if [ -f "$HOME/.nanorc" ] && [ ! -s "$HOME/.nanorc" ]
+if [ -f "$HOME/.nanorc" ]
 then
   mv ~/.nanorc ~/.nanoconf
-  echo "Your config has been moved to $HOME/.nanoconf."
+  echo "Your nano config has been moved to $HOME/.nanoconf."
   echo "Edit that file to add configs besides the loader."
 fi
 echo "Enabling highlighters..."
