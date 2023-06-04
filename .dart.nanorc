@@ -1,0 +1,6 @@
+syntax "dart" "\\*.dart$"
+color brightyellow "\<(async|await|break|case|catch|class|const|continue|default|do|else|enum|extends|false|final|finally|for|if|in|is|null|rethrow|return|super|switch|this|throw|true|try|var|void|while|import)\>"
+color cyan "//.*$" "(^|[^\\\\])\".*[^\\\\]\""
+color brightmagenta "\"[^\"]*\""
+color brightmagenta "'[^\']*'"
+color brightcyan "@override"
