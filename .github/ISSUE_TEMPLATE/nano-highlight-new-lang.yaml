@@ -40,3 +40,5 @@ body:
         - Markup
         - Command-line
         - Configuration file
+      validations:
+        required: true
