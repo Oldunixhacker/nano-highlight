@@ -9,6 +9,13 @@ This highlighter adds Dart support to nano's highlighter.
 
 ![Dart highlighter](https://github.com/TylerMS887/nano-highlight/assets/115214762/36cfb212-6e79-4278-873a-bca8e1eb86cd)
 
+Install the highlighter with these commands:
+```shell
+cd ~
+wget https://raw.githubusercontent.com/TylerMS887/nano-highlight/main/.dart.nanorc
+echo -e '\ninclude "~/.dart.nanorc"' >> ~/.nanorc
+```
+
 ## Add new highlighters
 
 Create a new issue.
