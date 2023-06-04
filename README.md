@@ -4,18 +4,17 @@ More syntax highlighters for Nano editor.
 
 ## Setup
 
-To install nano-highlight use these commands:
+To install or update nano-highlight use this command:
 
 ```shell
-cd ~
-mkdir nano-highlight
-cd nano-highlight
-wget https://raw.githubusercontent.com/TylerMS887/nano-highlight/main/README-installed -O README -q
-cat README
-rm README
+/bin/bash -c "$(curl -fsSL https://raw.githubusercontent.com/TylerMS887/nano-highlight/main/full-install.sh)"
 ```
 
-Now, install a [highlighter](#highlighters).
+Or to do a basic install (e.g. highlighters must be installed manually):
+
+```
+/bin/bash -c "$(curl -fsSL https://raw.githubusercontent.com/TylerMS887/nano-highlight/main/install.sh)"
+```
 
 ## Highlighters
 
@@ -25,9 +24,9 @@ This highlighter adds Dart support to nano's highlighter.
 
 ![Dart highlighter](https://github.com/TylerMS887/nano-highlight/assets/115214762/36cfb212-6e79-4278-873a-bca8e1eb86cd)
 
-Install the highlighter with these commands:
+If you done a basic install, paste these commands into your shell to enable Dart highlighting:
 
-```shell
+```
 export PREVIOUS_DIR="$(pwd)"
 cd ~/nano-highlight
 wget https://raw.githubusercontent.com/TylerMS887/nano-highlight/main/.dart.nanorc
