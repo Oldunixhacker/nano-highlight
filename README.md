@@ -7,13 +7,13 @@ More syntax highlighters for Nano editor.
 To install or update nano-highlight use this command:
 
 ```shell
-/bin/bash -c "$(curl -fsSL https://raw.githubusercontent.com/TylerMS887/nano-highlight/main/full-install.sh)"
+/bin/bash -c "$(curl -fsSL https://raw.githubusercontent.com/TylerMS887/nano-highlight/HEAD/full-install.sh)"
 ```
 
 Or to do a basic install (e.g. highlighters must be installed manually):
 
 ```shell
-/bin/bash -c "$(curl -fsSL https://raw.githubusercontent.com/TylerMS887/nano-highlight/main/install.sh)"
+/bin/bash -c "$(curl -fsSL https://raw.githubusercontent.com/TylerMS887/nano-highlight/HEAD/install.sh)"
 ```
 
 ## Highlighters
