@@ -1,4 +1,4 @@
-name: New Language
+name: New Language Requester
 description: Request that a new language be added
 labels: ["new language"]
 assignees: ["TylerMS887"]
@@ -17,7 +17,7 @@ body:
       label: Requirements
       description: "Please thoroughly read and tick these requirements before you submit this request."
       options:
-        - label: This is not an esoteric language. Estoric languages are not accepted into nano-highlight for obvious reasons.
+        - label: This is not an esoteric language. Esoteric languages are not accepted into nano-highlight for obvious reasons.
           required: true
   - type: input
     id: name
@@ -30,6 +30,7 @@ body:
     id: example
     attributes:
       label: Example code
+      placeholder: "Insert an example of a program in the language here. This should not be the nano configuration for the highlighter."
       render: text
       placeholder: 'print "Hello World!"'
     validations:
