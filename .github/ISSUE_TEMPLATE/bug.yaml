@@ -1,0 +1,16 @@
+name: Bug report
+description: Report bugs
+labels: 'bug'
+assignees: 'TylerMS887'
+body:
+- type: markdown
+  attributes:
+    value: "For bug reports related to nano itself, please report the issue to GNU's bug tracker. For bug reports related to the highlighters included within your system, please contact your distribution's developers or submit a report on their bug tracker (e.g. use `reportbug` for Debian)."
+- type: input
+  id: prevalence
+  attributes:
+    label: Expected behaviour
+    description: "What did you expect when nano is highlighting?"
+    placeholder: "Whenever I visit the user account page (1-2 times a week)"
+  validations:
+    required: true
