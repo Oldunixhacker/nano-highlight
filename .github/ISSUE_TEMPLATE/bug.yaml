@@ -7,7 +7,7 @@ body:
   attributes:
     value: "For bug reports related to nano itself, please report the issue to GNU's bug tracker. For bug reports related to the highlighters built into your system, please contact your distribution's developers or submit a report on their bug tracker (e.g. use `reportbug` for Debian)."
 - type: input
-  id: prevalence
+  id: expected
   attributes:
     label: Expected behaviour
     description: "What did you expect when nano is highlighting?"
@@ -15,10 +15,19 @@ body:
   validations:
     required: true
 - type: input
-  id: prevalence
+  id: actual
   attributes:
     label: Actual behaviour
     description: "What happened instead?"
     placeholder: "Dart code is not highlighted"
+  validations:
+    required: true
+- type: dropdown
+  id: download
+  attributes:
+    label: Highlighter
+    options:
+      - Dart
+      - Visual Studio Code ignore comments
   validations:
     required: true
