@@ -39,9 +39,7 @@ cd $PREVIOUS_DIR
 
 [Create a new issue](https://tinyurl.com/nano-highlight-new-lingua).
 
-Highlighters must not:
-* Be for esoteric programming languages (who needs those?)
-* Contain syntax errors that affect the current Debian stable version of nano
+Highlighters must not be for esoteric programming languages. (Who needs those?)
 
 ### To your setup
 
