@@ -23,7 +23,7 @@ body:
   validations:
     required: true
 - type: dropdown
-  id: download
+  id: highlighter
   attributes:
     label: Highlighter
     options:
